@@ -1,0 +1,552 @@
+    1  sudo passwd
+    2  cd Cloud-Computing
+    3  ls
+    4  vi conflict.txt
+    5  git commit -a -m "VM2 Commit"
+    6  git push
+    7  git pull
+    8  ls
+    9  git pull
+   10  git fetch origin
+   11  git pull
+   12  git reset --hard origin/master
+   13  git pull
+   14  vi conflict.txt
+   15  ls
+   16  which wget
+   17  sudo apt-get update
+   18  wget -qO- https://get.docker.com/ | sh
+   19  docker run hello-world
+   20  sudo docker run hello-world
+   21  quit
+   22  exit
+   23  sudo docker run hello-world
+   24  sudo
+   25  -­‐
+   26  a
+   27  docker run hello-world
+   28  sudo docker run hello-world
+   29  quit
+   30  exit
+   31  docker run hello-world
+   32  docker run docker/whalesay cowsay boo
+   33  docker images
+   34  whalesay
+   35  docker run docker/whalesay cowsay boo-boo
+   36  whalesay test
+   37  ls
+   38  mkdir mydockerbuild
+   39  cd mydockerbuild
+   40  nano Dockerfile.txt
+   41  docker build -t docker-whale .
+   42  nano Dockerfile.txt
+   43  ls
+   44  nano Dockerfile
+   45  rm Dockerfile.txt
+   46  ls
+   47  docker build -t docker-whale .
+   48  docker images
+   49  docker run docker-whale
+   50  exit
+   51  docker run docker-whale
+   52  pwd
+   53  cd
+   54  ls
+   55  git clone https://github.com/OwenKane/Lab4-Docker.git
+   56  ls
+   57  cd Lab4-Docker
+   58  ls
+   59  docker build
+   60  docker images
+   61  docker build
+   62  docker run
+   63  docker ps
+   64  cd
+   65  ls
+   66  cd
+   67  docker build
+   68  docker build Lab4-Docker
+   69  docker images
+   70  docker run
+   71  ls
+   72  docker run Lab4-Docker
+   73  docker run docker-whale
+   74  docker images
+   75  docker run python
+   76  docker run docker/whalesay
+   77  docker ps
+   78  docker run docker-whale
+   79  docker ps
+   80  exit
+   81  pwd
+   82  ls
+   83  docker images
+   84  docker inspect
+   85  docker inspect <none>
+   86  clear
+   87  docker images
+   88  ls
+   89  docker images
+   90  docker inspect <none>
+   91  docker images
+   92  docker run hello-world
+   93  docker ps
+   94  ls
+   95  docker images
+   96  cd Cloud-Computing
+   97  ls
+   98  cd ..
+   99  cd Lab4-Docker
+  100  git commit -a -m "Submitting lab"
+  101  cd
+  102  docker run ubuntu:14.04 echo "Hello World"
+  103  docker ps
+  104  docker run ubuntu:14.04 ps
+  105  docker run ubuntu:14.04 ps ax
+  106  docker run ubuntu:14.04 echo "Hello World"
+  107  clear
+  108  docker run ubuntu:14.04 echo "Hello World"
+  109  docker run ubuntu:14.04 ps
+  110  docker inspect
+  111  docker inspect ubuntu:14.04
+  112  docker ubuntu:14.04 inspect
+  113  docker inspect ubuntu:14.04
+  114  docker stop
+  115  docker stop ubuntu:14.01
+  116  docker stop ubuntu:14.04
+  117  clear
+  118  docker stop ubuntu:14.04
+  119  clear
+  120  docker run ubuntu:14.04 echo "Hello World"
+  121  docker run ubuntu:14.04 ps
+  122  docker inspect ubuntu:14.04
+  123  clear
+  124  docker run docker-whale
+  125  docker run ubuntu:14.04 echo "Hello World"
+  126  docker run ubuntu:14.04docker ps
+  127  docker ps
+  128  docker run ubuntu:14.04 echo "Hello World"
+  129  ls -l
+  130  cd Lab4-Docker
+  131  ls -l
+  132  docker build -t lab4 .
+  133  docker ps
+  134  docker run
+  135  docker run Lab4
+  136  ls
+  137  docker run lab4
+  138  docker ps
+  139  docker inspect lab4
+  140  docker inspect Using username "user".
+  141  user@snf-35274.vm.okeanos-global.grnet.gr's password:
+  142  Welcome to Ubuntu 14.04.2 LTS (GNU/Linux 3.13.0-48-generic x86_64)
+  143   * Documentation:  https://help.ubuntu.com/
+  144    System information as of Wed Oct  7 17:03:30 EEST 2015
+  145    System load:  0.11               Processes:              80
+  146    Usage of /:   12.2% of 19.56GB   Users logged in:        1
+  147    Memory usage: 19%                IP address for eth1:    83.212.127.196
+  148    Swap usage:   0%                 IP address for docker0: 172.17.42.1
+  149    Graph this data and manage this system at:
+  150      https://landscape.canonical.com/
+  151  Last login: Wed Oct  7 17:03:31 2015 from 147.252.234.224
+  152  user@snf-35274:~$ docker ps
+  153  CONTAINER ID        IMAGE               COMMAND                  CREATED                                                      STATUS              PORTS               NAMES
+  154  6d05bd82d574        lab4                "/bin/sh -c 'python s"   22 seconds ago                                               Up 21 seconds       5000/tcp            hungry_turing
+  155  user@snf-35274:~$ docker inspect lab4
+  156  [
+  157  {
+  158      "Id": "6b3fc05c1ef8ebf520870546ad57013085c4e38b9b5dc5e69b03f5f7fee05b24",
+  159      "Parent": "739f0925cc287cdb984a3845fad05f8398a1492cbad40d817000104b99f5fefb"                                         ,
+  160      "Comment": "",
+  161      "Created": "2015-10-07T13:25:26.47618242Z",
+  162      "Container": "b70fc63339b3d160b4120a28c5c1ab9c940cbbd9e95b8cdb7ab5648b080a9b                                         ab",
+  163      "ContainerConfig": {
+  164          "Hostname": "7b840bf4fc5e",
+  165          "Domainname": "",
+  166          "User": "",
+  167          "AttachStdin": false,
+  168          "AttachStdout": false,
+  169          "AttachStderr": false,
+  170          "ExposedPorts": {
+  171              "5000/tcp": {}
+  172          },
+  173          "PublishService": "",
+  174          "Tty": false,
+  175          "OpenStdin": false,
+  176          "StdinOnce": false,
+  177          "Env": [
+  178              "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+  179              "LANG=C.UTF-8",
+  180              "PYTHON_VERSION=2.7.10",
+  181              "PYTHON_PIP_VERSION=7.1.2"
+  182          ],
+  183          "Cmd": [
+  184              "/bin/sh",
+  185              "-c",
+  186              "#(nop) CMD [\"/bin/sh\" \"-c\" \"python server.py\"]"
+  187  clear
+  188  docker inspect lab4
+  189  docker inspect lab4 
+  190  docker ps
+  191  docker inspect 6d05bd82d574
+  192  curl 172.0.17.36:5000
+  193  curl 172.17.0.36:5000
+  194  clear
+  195  curl 172.17.0.36:5000
+  196  docker inspect lab4 
+  197  docker ps
+  198  docker inspect 6d05bd82d574
+  199  curl 172.17.0.36:5000
+  200  docker run docker-whale
+  201  curl 172.17.0.36:5000
+  202  docker ps
+  203  docker inspect 6d05bd82d574
+  204  curl 172.17.0.36:5000
+  205  ls
+  206  cd Lab4-Docker/
+  207  docker build -t lab4 .
+  208  docker run lab4
+  209  docker images
+  210  docker inspect 6b3fc05c1ef8
+  211  curl 172.17.0.36:5000
+  212  docker ps
+  213  docker images
+  214  docker ps
+  215  docker stop 6b3fc05c1ef8
+  216  docker inspect 6b3fc05c1ef8
+  217  docker ps
+  218  docker inspect b6c5f5376861
+  219  docker stop b6c5f5376861
+  220  docker rm b6c5f5376861
+  221  docker rmi b6c5f5376861
+  222  docker rmi lab4
+  223  ls
+  224  docker
+  225  ls
+  226  cd lab4-docker
+  227  cd Lab4-Docker
+  228  mkdir Lab5
+  229  ls
+  230  git add Lab5
+  231  git commit -a -m "Added lab5 folder"
+  232  git commit --all
+  233  ls
+  234  cd Lab5
+  235  ls
+  236  cd ..
+  237  git commit -a -m "Added lab5 folder"
+  238  git add Lab5
+  239  git commit -a -m "Added lab5 folder"
+  240  git push
+  241  ls
+  242  cd my_application/
+  243  ls
+  244  nano server.py
+  245  exit
+  246  ls
+  247  cd Lab4-Docker/
+  248  ls
+  249  cd Lab5/
+  250  ls
+  251  cd my_application/
+  252  ls
+  253  nano server.py 
+  254  cd
+  255  cd..
+  256  ls
+  257  cd Lab4-Docker/
+  258  ls
+  259  cd Lab5/
+  260  ls
+  261  docker build -t Lab5 .
+  262  docker build -t lab5 .
+  263  docker run lab5
+  264  ls
+  265  cd Lab4-Docker/
+  266  ls
+  267  cd my_application/
+  268  ls
+  269  nano server.py 
+  270  cd ..
+  271  ls
+  272  Cd Lab4-Docker/
+  273  cd Lab4-Docker/
+  274  git pull
+  275  docker inspect
+  276  docker ps
+  277  docker inspect ebc0fb2ee995
+  278  $curl http://172.17.42.1:8080
+  279  curl http://172.17.42.1:8080
+  280  curl http://172.17.0.41:8080
+  281  curl 172.17.0.41:8080
+  282  curl http://172.17.0.41:8080
+  283  curl http://172.17.0.41:5000
+  284  ls
+  285  cd Lab4-Docker/
+  286  ls
+  287  cd Lab5/
+  288  ls
+  289  cd my_application/
+  290  ls
+  291  nano server.py
+  292  cd ..
+  293  cdf
+  294  ls
+  295  cd user
+  296  curl http://172.17.0.41:5000/hello
+  297  curl http://172.17.0.41:5000/user/paul
+  298  dokcer ps
+  299  docker ps
+  300  docker inspect 9cecdd2dc6a9
+  301  curl http://172.17.0.42:8080
+  302  curl http://172.17.0.42:5000
+  303  docker ps
+  304  docker rm -f focused_lovelace
+  305  docker ps
+  306  docker rm -f goofy_yalow
+  307  docker rm -f suspicious_albattani 
+  308  docker rm -f hungry_turing 
+  309  docker ps
+  310  ls
+  311  docker Lab4-Docker
+  312  cd Lab4-Docker
+  313  ls
+  314  cd Lab5/
+  315  ls
+  316  cd my_application/
+  317  ls
+  318  nano server.py
+  319  cd ..
+  320  cd my_application/
+  321  nano server.py
+  322  cd ..
+  323  docker build -t Lab5
+  324  docker build -t lab5
+  325  ls
+  326  cd Lab4-Docker/
+  327  ls
+  328  docker build -t lab5
+  329  docker build -t Lab5
+  330  docker build Lab5
+  331  docker run Lab5
+  332  docker run -t Lab5
+  333  docker run lab5
+  334  cd Lab4-Docker/
+  335  ls
+  336  cd Lab5/
+  337  ls
+  338  cd my_application/
+  339  ls
+  340  nano server.py 
+  341  docker build Lab5
+  342  cd
+  343  cd Lab4-Docker/
+  344  docker build Lab5
+  345  docker run lab5
+  346  git pull
+  347  l
+  348  ls
+  349  git pull
+  350  cd Lab5/
+  351  ls
+  352  cd my_application/
+  353  ls
+  354  nano server.py 
+  355  docker build Lab5
+  356  cd ..
+  357  docker build Lab5
+  358  docker build -t Lab5
+  359  cd ..
+  360  docker build -t Lab5
+  361  docker build Lab5
+  362  docker build Lab5 .
+  363  cd Lab5/
+  364  docker build Lab5 .
+  365  docker build -t Lab5 .
+  366  docker build -t Lab52 .
+  367  cd ..
+  368  ls
+  369  cd Lab5/
+  370  ls
+  371  cd my_application/
+  372  ls
+  373  nano server.py 
+  374  cd ..
+  375  docker build -t Lab52 .
+  376  docker build -t Lab5 .
+  377  cd ..
+  378  docker build -t Lab52 .
+  379  docker ps
+  380  docker build -t test .
+  381  docker run test
+  382  cd Lab5
+  383  ps
+  384  ls
+  385  cd my_application/
+  386  nano server.py 
+  387  docker build -t Lab5ls ~/Lab4-Docker/Lab5/
+  388  ls ~/Lab4-Docker/Lab5/
+  389  ls ~/Lab4-Docker/Lab5/my_application/
+  390  ls ~/Lab4-Docker/Lab5/Dockerfile 
+  391  ls
+  392  cd
+  393  ls
+  394  cd Lab4-Docker/
+  395  git pull
+  396  exit
+  397  ls
+  398  cd Lab4-Docker/
+  399  ls
+  400  cd Lab5/
+  401  ls
+  402  cd my_application/
+  403  ls
+  404  nano server.py 
+  405  cd ..
+  406  ls
+  407  cd ..
+  408  ls
+  409  docker -t lab5 .
+  410  docker build -t lab5 .
+  411  docker ps
+  412  docker run lab5
+  413  docker ps
+  414  docker rm -f serene_thompson 
+  415  docker ps
+  416  docker inspect dc73302b42b8
+  417  curl http://172.17.0.45:8080
+  418  curl http://172.17.0.45:500
+  419  curl http://172.17.0.45:5000
+  420  ls
+  421  cd Lab5
+  422  ls
+  423  cd my_application/
+  424  ls
+  425  l
+  426  ls
+  427  nano server.py 
+  428  cd ..
+  429  git commit -m "work on lab5"
+  430  git add --all
+  431  git commit -m "work on lab5"
+  432  git push
+  433  docker ps
+  434  docker ps
+  435  docker rm -f focused_albattani 
+  436  cd ..
+  437  docker build -t lab5 
+  438  docker images
+  439  docker inspect Lab5
+  440  docker images
+  441  docker run Lab5
+  442  exit
+  443  ls
+  444  git clone https://github.com/OwenKane/Lab-6.git
+  445  ls
+  446  cd Lab-6/
+  447  ls
+  448  cd my_application/
+  449  ls
+  450  nano server.py 
+  451  ls
+  452  cd ..
+  453  ls
+  454  cd my_application/
+  455  ls
+  456  cd ..
+  457  ls
+  458  docker build -t Lab6
+  459  cd my_application/
+  460  docker build -t Lab6
+  461  ls
+  462  cd ..
+  463  docker build -t Lab6 .
+  464  docker images
+  465  docker rmi lab5
+  466  docker rmi lab4
+  467  docker rmi test
+  468  docker images
+  469  docker rmi <none>
+  470  docker rmi none
+  471  docker rmi $(docker images | grep "^<none>" | awk "{print $3}")
+  472  docker images
+  473  clear
+  474  docker images
+  475  ls
+  476  docker build -t Lab6 .
+  477  cd my_application/
+  478  docker build -t Lab6 .
+  479  cd ..
+  480  docker images
+  481  cd my_application/
+  482  ls
+  483  cd ..
+  484  ls
+  485  docker build -t Lab6 
+  486  docker build -t Lab6 .
+  487  cd ..
+  488  ls
+  489  docker build -t Lab6 /lab-6
+  490  docker build -t Lab6 .
+  491  cd Lab-6/
+  492  docker build -t Lab6 .
+  493  docker build -t lab6 .
+  494  docker run 
+  495  –
+  496  d 
+  497  –
+  498  p 8080:5000 
+  499  –
+  500  name webserver1 
+  501  lab
+  502  docker run lab6 -d -p 8080:5000 -name webserver1 lab6
+  503  docker images
+  504  docker run -d -p 8080:5000 -name webserver1 lab6
+  505  docker run lab6
+  506  ls
+  507  docker stop $(docker ps -a -q)
+  508  docker images
+  509  docker run -d -p 8080:5000 lab6
+  510  docker ps
+  511  docker inspect 4ce31d4f7fdb
+  512  docker images
+  513  docker ps
+  514  docker stop $(docker ps -a -q)
+  515  docker ps
+  516  docker run -d -p 8080:5000 -name webserver1 lab6
+  517  docker run -d -p 8080:5000 -name test lab6
+  518  docker run -d -p 8080:5000 lab6
+  519  docker ps
+  520  docker images
+  521  docker ps
+  522  docker exec -it 834e22bc373a /bin/bash
+  523  docker ps
+  524  docker stop ecstatic_ardinghelli 
+  525  docker run 
+  526  –
+  527  d 
+  528  –
+  529  p 8080:5000 
+  530  –
+  531  name webserver1 
+  532  lab
+  533  docker run -d -p 8080:5000 -n webserver2 lab6
+  534  docker run -d -p 8080:5000 --name webserver2 lab6
+  535  docker ps
+  536  docker run -d -p 8080:5000 --name webserver1 lab6
+  537  docker ps
+  538  docker stop webserver2 
+  539  docker run -d -p 8080:5000 --name webserver1 lab6
+  540  docker ps -a
+  541  docker stop webserver2
+  542  docker ps
+  543  exit
+  544  pwd
+  545  mkdir data
+  546  ls
+  547  docker run -d -p 8080:5000 -v $(pwd)/data:/data --name containername lab6
+  548  docker images
+  549  docker ps
+  550  docker exec -it containername /bin/bash
+  551  history
+  552  history > history.txt
