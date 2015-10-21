@@ -550,3 +550,65 @@
   550  docker exec -it containername /bin/bash
   551  history
   552  history > history.txt
+  553  ls
+  554  cd Lab-6/
+  555  ls
+  556  git add --all
+  557  git commit -m "Added history file pre-step 6 to show before deletion"
+  558  git push
+  559  cd ..
+  560  ls
+  561  cd create -v /data --name datastorel hello-world /bin/true
+  562  ls
+  563  cd Lab4-Docker/
+  564  cd create -v /data --name datastorel hello-world /bin/true
+  565  ls
+  566  cd ..
+  567  ls
+  568  docker images
+  569  ls
+  570  cd Cloud-Computing/
+  571  ls
+  572  cd Lab3/
+  573  ls
+  574  cd ..
+  575  ls
+  576  docker hello-world
+  577  docker run hello-world
+  578  ls
+  579  cd LAb4
+  580  cd Lab4-Docker/
+  581  ls
+  582  docker create -v /data --name datastore1 hello-world /bin/true
+  583  docker run -d --name uploader1 --volumes-from datastore1 lab6
+  584  l
+  585  docker ps
+  586  ls
+  587  docker images
+  588  docker ps
+  589  docker ps -a
+  590  docker run 42fbe253dd4d 
+  591  docker exec -it datastore1 /bin/data 
+  592  docker exec -it uploader1 /bin/data 
+  593  ls
+  594  docker exec -it uploader1 /bin/data 
+  595  docker exec -it uploader1 /bin/bash
+  596  docker run -d --name uploader2 --volumes-from datastore1 lab6
+  597  docker ps
+  598  docker exec -it uploader1 /bin/data 
+  599  docker exec -it uploader1 /bin/bash
+  600  docker exec -it uploader2 /bin/bash
+  601  docker run -d -p 8080:500 --name uploader3 --volumes-from datastore1 lab6
+  602  docker run -d -p 8081:500 --name uploader3 --volumes-from datastore1 lab6
+  603  docker ps
+  604  docker run -d -p 8081:500 --name uploader4 --volumes-from datastore1 lab6
+  605  docker run -d -p 8082:500 --name uploader5 --volumes-from datastore1 lab6
+  606  docker ps
+  607  docker run -d -p 8083:5000 --name uploader6 --volumes-from datastore1 lab6
+  608  docker run -d -p 8084:5000 --name uploader7 --volumes-from datastore1 lab6
+  609  history > history.txt
+  610  ls
+  611  pwd
+  612  cd
+  613  ls
+  614  history > history.txt
